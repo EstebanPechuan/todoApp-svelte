@@ -8,20 +8,16 @@
   let tasks = (getStorage.length !== 0 && getStorage ) || [
     {
         id: 1,
-        title: 'Title 1',
+        title: 'Tarea de ejemplo 1',
     },
     {
         id: 2,
-        title: 'Title 2',
+        title: 'Practicar React',
     },
     {
         id: 3,
-        title: 'Title 3',
-    },
-    {
-        id: 4,
-        title: 'Title 4',
-    },
+        title: 'Practicar Svelte',
+    }
   ]
 
   const handleDelete = (el) => {

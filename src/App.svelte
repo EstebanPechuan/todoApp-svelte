@@ -5,7 +5,12 @@
   let indexTaskEdited
   let getStorage = JSON.parse(localStorage.getItem('tasksSvelte'))
 
-  let tasks = (getStorage.length !== 0 && getStorage ) || [
+  if (getStorage.length === 0) {
+    getStorage = null
+  }
+
+  
+  let tasks = getStorage || [
     {
         id: 1,
         title: 'Tarea de ejemplo 1',
